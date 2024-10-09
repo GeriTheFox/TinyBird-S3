@@ -1,0 +1,14 @@
+services:
+  tinybird:
+    build:
+      dockerfile: ./Dockerfile
+    environment:
+      MINIO_URL : ""
+      SECURE : True
+      ACCESS_KEY : ""
+      SECRET_KEY : ""
+      BUCKET_NAME : ""
+      ENABLE_UPLOAD : False
+      
+    ports:
+      - 127.0.0.1:5000:5000
